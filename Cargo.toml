@@ -1,0 +1,12 @@
+[package]
+name = "log-book-git"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4", features = ["derive", "env"] }
+reqwest = { version = "0.11", features = ["json", "blocking"] }
+serde = { version = "1", features = ["derive"] }
+chrono = { version = "0.4", features = ["serde"] }
+anyhow = "1"
+urlencoding = "2"
